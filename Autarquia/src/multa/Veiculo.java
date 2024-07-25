@@ -10,7 +10,7 @@ public class Veiculo {
 	private int ano;
 	Scanner scanner = new Scanner ( System.in );
 	
-	public Veiculo() {
+	public Veiculo(String placa, String modelo, String chassi, String marca, int ano) {
 		setPlaca(placa);
 		setModelo(modelo);
 		setChassi(chassi);
@@ -19,6 +19,8 @@ public class Veiculo {
 	}
 	
 	public void setPlaca(String novaPlaca) {
+		//System.out.println("Digite a placa do veiculo: ");
+		//novaPlaca = scanner.nextLine();
 		this.placa = novaPlaca;
 	}
 	
@@ -27,6 +29,8 @@ public class Veiculo {
 	}
 	
 	public void setModelo(String novoModelo) {
+		//System.out.println("Digite o modelo do veiculo: ");
+		//novoModelo = scanner.nextLine();
 		this.modelo = novoModelo;
 	}
 	
@@ -35,6 +39,8 @@ public class Veiculo {
 	}
 	
 	public void setChassi(String novoChassi) {
+		//System.out.println("Digite o chassi do veiculo: ");
+		//novoChassi = scanner.nextLine();
 		this.chassi = novoChassi;
 	}
 	
@@ -43,6 +49,8 @@ public class Veiculo {
 	}
 	
 	public void setMarca(String novaMarca) {
+		//System.out.println("Digite a marca do veiculo: ");
+		//novaMarca = scanner.nextLine();
 		this.marca = novaMarca;
 	}
 	
@@ -51,7 +59,8 @@ public class Veiculo {
 	}
 	
 	public void setAno(int novoAno) {
-		novoAno = scanner.nextInt();
+		//System.out.println("Digite o ano do veiculo: ");
+		//novoAno = scanner.nextInt();
 		this.ano = novoAno;
 	}
 	

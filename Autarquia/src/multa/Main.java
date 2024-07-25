@@ -6,15 +6,25 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		Multa multa;
-		multa = new Multa();
-		System.out.println(multa.getNome()); 
-		System.out.println(multa.getDesc()); 
-		System.out.println(multa.getPontos()); 
-		System.out.println(multa.getGravidade()); 
-		System.out.println(multa.getValor()); 
+		multa = new Multa("Glayber", 2, 5, "Grave", "desc");
+		
 		Veiculo veiculo;
-		veiculo = new Veiculo();
-		System.out.println(veiculo.getAno());
+		veiculo = new Veiculo("12345", "Gol", "23423521", "Volks", 2014);
+		
+		Local local;
+		local = new Local("Estado", "Cidade", "Rua", "0000-00");
+		
+		Pessoa pessoa;
+		pessoa = new Pessoa("Nome", "12345-67", 12345, "AB");
+		
+		Autuacao autuacao;
+		autuacao = new Autuacao(local, veiculo);
+		autuacao.addMulta(multa);
+		System.out.println(autuacao.printar(multa));
+		Autuador autuador;
+		autuador = new Autuador(veiculo, pessoa, local);
+		autuador.addAutuacao(autuacao);
+		System.out.println(autuador.getAutuacao(veiculo));
 	}
 
 }
