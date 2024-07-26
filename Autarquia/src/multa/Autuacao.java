@@ -16,6 +16,7 @@ public class Autuacao {
 		m.add(multa);
 	}
 	
+<<<<<<< HEAD
 	public String printar(Multa multa, Local local, Veiculo veiculo) {
 		return	multa.getGravidade() + "\n" +
 				multa.getDesc() + "\n" +
@@ -25,5 +26,14 @@ public class Autuacao {
 				local.getCep();
 				
 	}
+=======
+	public String printar(Multa multa) {
+		return multa.getDesc() + multa.getGravidade() +
+				multa.getNome() + multa.getPontos() +
+				multa.getValor();
+	}
+	
+	
+>>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
 	
 }
