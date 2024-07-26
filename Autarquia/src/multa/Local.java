@@ -6,7 +6,8 @@ public class Local {
 	private String rua;
 	private String cep;
 	
-	public Local() {
+	public Local(String estado, String cidade, String rua, String cep) {
+		
 		setEstado(estado);
 		setCidade(cidade);
 		setRua(rua);

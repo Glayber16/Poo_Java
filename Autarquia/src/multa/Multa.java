@@ -11,27 +11,28 @@ public class Multa {
 	private String desc;
 	Scanner scanner = new Scanner ( System.in );
 	
-	public Multa() {
-		
+	public Multa(String nome, int pontos, String gravidade, String desc, double valor) {
 		setNome(nome);
-		setValor(valor);
 		setPontos(pontos);
 		setGravidade(gravidade);
 		setDesc(desc);
+		setValor(valor);
+		
+		
 	}
 	
 	public void setValor(double novoValor) {
-		novoValor = scanner.nextDouble();
+
 		this.valor = novoValor;
 	}
 	
 	public double getValor() {
-		System.out.println("Digite o valor: ");
+
 		return this.valor;
 	}
 	
 	public void setPontos(int novoPontos) {
-		System.out.println("Digite quantos pontos: ");
+		
 		this.pontos = novoPontos;
 	}
 	
@@ -40,7 +41,7 @@ public class Multa {
 	}
 	
 	public void setNome(String novoNome) {
-		System.out.println("Digite o nome: ");
+		
 		this.nome = novoNome;
 	}
 	
@@ -49,7 +50,7 @@ public class Multa {
 	}
 	
 	public void setGravidade(String novaGravidade) {
-		System.out.println("Digite a gravidade: ");
+		
 		this.gravidade = novaGravidade;
 	}
 	
@@ -58,7 +59,7 @@ public class Multa {
 	}
 	
 	public void setDesc(String novaDesc) {
-		System.out.println("Digite a descricao: ");
+		
 		this.desc = novaDesc;
 	}
 	

@@ -51,7 +51,6 @@ public class Veiculo {
 	}
 	
 	public void setAno(int novoAno) {
-		novoAno = scanner.nextInt();
 		this.ano = novoAno;
 	}
 	

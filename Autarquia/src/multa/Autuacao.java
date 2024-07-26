@@ -16,4 +16,14 @@ public class Autuacao {
 		m.add(multa);
 	}
 	
+	public String printar(Multa multa, Local local, Veiculo veiculo) {
+		return	multa.getGravidade() + "\n" +
+				multa.getDesc() + "\n" +
+				multa.getNome() + "\n" +
+				multa.getPontos() + "\n" +
+				multa.getValor() + "\n" +
+				local.getCep();
+				
+	}
+	
 }
