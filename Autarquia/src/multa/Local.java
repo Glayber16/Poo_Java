@@ -19,8 +19,7 @@ public class Local {
 	}
 	
 	public void setEstado(String novoEstado) {
-		//System.out.println("Digite o estado: ");
-		//novoEstado = scanner.nextLine();
+	
 		this.estado = novoEstado;
 	}
 	
@@ -29,8 +28,7 @@ public class Local {
 	}
 	
 	public void setCidade(String novaCidade) {
-		//System.out.println("Digite a Cidade: ");
-		//novaCidade = scanner.nextLine();
+		
 		this.cidade = novaCidade;
 	}
 	
@@ -39,8 +37,7 @@ public class Local {
 	}
 	
 	public void setRua(String novaRua) {
-		//System.out.println("Digite a rua: ");
-		//novaRua = scanner.nextLine();
+	
 		this.rua = novaRua;
 	}
 	
@@ -49,8 +46,7 @@ public class Local {
 	}
 	
 	public void setCep(String novoCep) {
-		//System.out.println("Digite o CEP: ");
-		//novoCep = scanner.nextLine();
+	
 		this.cep = novoCep;
 	}
 	

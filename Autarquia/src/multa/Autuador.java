@@ -13,20 +13,62 @@ public class Autuador {
 	
 	public Autuador(Veiculo v, Pessoa p, Local l) {
 		a = new ArrayList<Autuacao>();
+		this.l = l;
+	    this.p = p;
+	    this.v = v;
 	}
 	
 	public void addAutuacao(Autuacao autuacao) {
 		a.add(autuacao);
 	}
 	
-	
-	public int getAutuacao(Veiculo v) {
-		if(a.contains(v.getPlaca())) {
-			return a.indexOf(v.getPlaca());
+	public List<Autuacao> getAtuacaov(Veiculo v) {
+		List<Autuacao> resultado = new ArrayList<>();
+		for(Autuacao autuacao : a) {
+			if(autuacao.getVeiculo().getPlaca().equals(v.getPlaca())) {
+				resultado.add(autuacao);
+			}
+			
 		}
-		else {
-			return 0; 
+		return resultado;
+		
+	}
+	
+	public List<Autuacao> getAtuacaop(Pessoa p) {
+		List<Autuacao> resultado = new ArrayList<>();
+		for(Autuacao autuacao : a) {
+			if(autuacao.getPessoa().getCPF().equals(p.getCPF())) {
+				resultado.add(autuacao);
+			}
+			
+		}
+		return resultado;
+		
+	}
+	
+	public List<Autuacao> getAtuacaol(Local l) {
+		List<Autuacao> resultado = new ArrayList<>();
+		for(Autuacao autuacao : a) {
+			if(autuacao.getLocal().getRua().equals(l.getRua())) {
+				resultado.add(autuacao);
+			}
+			
+		}
+		return resultado;
+		
+	}
+	
+
+	
+	
+	public void printar(List<Autuacao> resultado) {
+		for(Autuacao autuacao1: resultado) {
+			System.out.println(autuacao1.getMulta());
 		}
 	}
 	
+	
+	
+	
+
 }
