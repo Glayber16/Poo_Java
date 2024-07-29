@@ -2,7 +2,7 @@ package multa;
 
 import java.util.Scanner;
 
-public class Pessoa {
+public abstract class Pessoa {
 	private String nome;
 	private String CPF;
 	private int CNH;
@@ -15,23 +15,7 @@ public class Pessoa {
 		setCNH(CNH);
 		setTipoCNH(tipoCNH);
 	}
-	class Agente extends Pessoa{
-
-		public Agente(String nome, String CPF, int CNH, String tipoCNH) {
-			super(nome, CPF, CNH, tipoCNH);
-			
-		}
-		
-	}
 	
-	class Condutor extends Pessoa{
-
-		public Condutor(String nome, String CPF, int CNH, String tipoCNH) {
-			super(nome, CPF, CNH, tipoCNH);
-			
-		}
-		
-	}
 	
 	public void setNome(String novoNome) {
 		
