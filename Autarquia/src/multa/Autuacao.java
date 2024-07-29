@@ -3,8 +3,8 @@ package multa;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Autuacao {
-	List<Multa> m;
+public abstract class Autuacao {
+	protected List<Multa> m;
 	Local local;
 	Veiculo veiculo;
 	Pessoa pessoa;
