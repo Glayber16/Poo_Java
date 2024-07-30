@@ -2,7 +2,7 @@ package multa;
 
 import java.util.Scanner;
 
-public class Pessoa {
+public abstract class Pessoa {
 	private String nome;
 	private String CPF;
 	private int CNH;
@@ -16,9 +16,9 @@ public class Pessoa {
 		setTipoCNH(tipoCNH);
 	}
 	
+	
 	public void setNome(String novoNome) {
-		//System.out.println("Digite o nome: ");
-		//novoNome = scanner.nextLine();
+		
 		this.nome = novoNome;
 	}
 	
@@ -27,8 +27,7 @@ public class Pessoa {
 	}
 	
 	public void setCPF(String novoCPF) {
-		//System.out.println("Digite o CPF: ");
-		//novoCPF = scanner.nextLine();
+	
 		this.CPF = novoCPF;
 	}
 	
@@ -37,8 +36,7 @@ public class Pessoa {
 	}
 	
 	public void setCNH (int novaCNH) {
-		//System.out.println("Digite a CNH: ");
-		//novaCNH = scanner.nextInt();
+		
 		this.CNH = novaCNH;
 	}
 	
@@ -47,8 +45,7 @@ public class Pessoa {
 	}
 	
 	public void setTipoCNH (String novoTipoCNH) {
-		//System.out.println("Digite o tipo da CNH: ");
-		//novoTipoCNH = scanner.nextLine();
+	
 		this.tipoCNH = novoTipoCNH;
 	}
 	

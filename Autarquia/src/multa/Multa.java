@@ -1,6 +1,6 @@
 package multa;
 
-import java.util.Scanner;
+import java.util.Date;
 
 public class Multa {
 
@@ -9,7 +9,7 @@ public class Multa {
 	private String nome;
 	private String gravidade;
 	private String desc;
-	Scanner scanner = new Scanner ( System.in );
+
 	
 <<<<<<< HEAD
 	public Multa(String nome, int pontos, String gravidade, String desc, double valor) {
@@ -28,10 +28,14 @@ public class Multa {
 	
 	public void setValor(double novoValor) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 		//System.out.println("Digite o valor: ");
 		//novoValor = scanner.nextDouble();
+>>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
+=======
+		
 >>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
 		this.valor = novoValor;
 	}
@@ -47,10 +51,14 @@ public class Multa {
 	
 	public void setPontos(int novoPontos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 		//System.out.println("Digite quantos pontos: ");
 		//novoPontos = scanner.nextInt();
+>>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
+=======
+		
 >>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
 		this.pontos = novoPontos;
 	}
@@ -61,10 +69,14 @@ public class Multa {
 	
 	public void setNome(String novoNome) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 		//System.out.println("Digite o nome: ");
 		//novoNome = scanner.nextLine();
+>>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
+=======
+		
 >>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
 		this.nome = novoNome;
 	}
@@ -75,10 +87,14 @@ public class Multa {
 	
 	public void setGravidade(String novaGravidade) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 		//System.out.println("Digite a gravidade: ");
 		//novaGravidade = scanner.nextLine();
+>>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
+=======
+		
 >>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
 		this.gravidade = novaGravidade;
 	}
@@ -89,16 +105,25 @@ public class Multa {
 	
 	public void setDesc(String novaDesc) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 		//System.out.println("Digite a descricao: ");
 		//novaDesc = scanner.nextLine();
+>>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
+=======
+	
 >>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
 		this.desc = novaDesc;
 	}
 	
 	public String getDesc() {
 		return this.desc;
+	}
+	
+	public Date getDate() {
+		Date data = new Date();
+		return data;
 	}
 }
 
