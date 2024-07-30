@@ -55,15 +55,7 @@ public class Veiculo {
 	}
 	
 	public void setAno(int novoAno) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-		//System.out.println("Digite o ano do veiculo: ");
-		//novoAno = scanner.nextInt();
->>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
-=======
 		
->>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
 		this.ano = novoAno;
 	}
 	

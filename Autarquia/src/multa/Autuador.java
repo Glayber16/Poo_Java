@@ -15,7 +15,7 @@ public class Autuador {
 	}
 	
 	public void autuar(Local l, Veiculo v, List<Multa> m , Pessoa p){
-		Autuacao au = new Autuacao(l,v, p) 
+		Autuacao au = new Autuacao(l,v, p); 
 		for(int i = 0; i < m.size(); i++) {
 			au.addMulta(m.get(i));
 		}

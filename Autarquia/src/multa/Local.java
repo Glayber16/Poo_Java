@@ -11,10 +11,6 @@ public class Local {
 	Scanner scanner = new Scanner ( System.in );
 	
 	public Local(String estado, String cidade, String rua, String cep) {
-<<<<<<< HEAD
-		
-=======
->>>>>>> branch 'master' of https://github.com/Glayber16/Poo_Java.git
 		setEstado(estado);
 		setCidade(cidade);
 		setRua(rua);
