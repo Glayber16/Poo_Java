@@ -1,4 +1,4 @@
-package multa;
+package pessoas;
 
 public class Agente extends Pessoa {
 

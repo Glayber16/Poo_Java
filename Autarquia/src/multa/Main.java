@@ -1,6 +1,9 @@
 package multa;
 
-
+import atuacoes.Autuacao;
+import local.Local;
+import pessoas.Pessoa;
+import veiculo.Veiculo;
 
 public class Main {
 

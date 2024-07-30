@@ -1,4 +1,4 @@
-package multa;
+package pessoas;
 
 import java.util.Scanner;
 

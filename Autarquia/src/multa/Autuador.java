@@ -3,6 +3,11 @@ package multa;
 import java.util.ArrayList;
 import java.util.List;
 
+import atuacoes.Autuacao;
+import local.Local;
+import pessoas.Pessoa;
+import veiculo.Veiculo;
+
 public class Autuador {
 	List<Autuacao> a;
 	Local l;

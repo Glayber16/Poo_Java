@@ -1,4 +1,4 @@
-package multa;
+package local;
 
 import java.util.Scanner;
 

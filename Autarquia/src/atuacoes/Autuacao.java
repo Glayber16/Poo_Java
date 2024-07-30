@@ -1,8 +1,13 @@
-package multa;
+package atuacoes;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import local.Local;
+import pessoas.Pessoa;
+import veiculo.Veiculo;
+import multa.*;
+import multa.*;
 public class Autuacao {
 	List<Multa> m;
 	Local local;
