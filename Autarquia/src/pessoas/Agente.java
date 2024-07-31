@@ -2,9 +2,10 @@ package pessoas;
 
 public class Agente extends Pessoa {
 
-	public Agente(String nome, String CPF, int CNH, String tipoCNH) {
-		super(nome, CPF, CNH, tipoCNH);
-		
+	String referencial;
+	public Agente(String nome, String CPF, String referencial) {
+		super(nome, CPF);
+		this.referencial = referencial;
 	}
 	
 }

@@ -9,11 +9,10 @@ public abstract class Pessoa {
 	private String tipoCNH;
 	Scanner scanner = new Scanner ( System.in );
 	
-	public Pessoa(String nome, String CPF, int CNH, String tipoCNH) {
+	public Pessoa(String nome, String CPF) {
 		setNome(nome);
 		setCPF(CPF);
-		setCNH(CNH);
-		setTipoCNH(tipoCNH);
+		
 	}
 	
 	
@@ -35,21 +34,5 @@ public abstract class Pessoa {
 		return this.CPF;
 	}
 	
-	public void setCNH (int novaCNH) {
-		
-		this.CNH = novaCNH;
-	}
 	
-	public int getCNH () {
-		return this.CNH;
-	}
-	
-	public void setTipoCNH (String novoTipoCNH) {
-	
-		this.tipoCNH = novoTipoCNH;
-	}
-	
-	public String getTipoCNH () {
-		return this.tipoCNH;
-	}
 }

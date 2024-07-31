@@ -1,9 +1,18 @@
 package multa;
 
-import atuacoes.Autuacao;
+import veiculo.*;
+import pessoas.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import autuacoes.*;
+import local.*;
+import autuacoes.AutuacaoAgente;
 import local.Local;
-import pessoas.Pessoa;
 import veiculo.Veiculo;
+import pessoas.Condutor;
+import pessoas.Pessoa;
 
 public class Main {
 
@@ -23,23 +32,21 @@ public class Main {
 		Local local;
 		local = new Local("Estado", "Cidade", "Rua", "0000-00");
 		
-		Pessoa pessoa;
-		pessoa = new Pessoa("Glayber", "12345-678", 12345, "AB");
-		Pessoa pessoa1;
-		pessoa1 = new Pessoa("Lucas", "12345-67", 12345, "AB");
+		 List<Multa> MultasA = new ArrayList<>();
+	     MultasA.add(multa);
+	     List<Multa> MultasC = new ArrayList<>();
+	     MultasC.add(multa2);
 		
-		Autuacao autuacao;
-		autuacao = new Autuacao(local, veiculo, pessoa);
-		autuacao.addMulta(multa);
-		autuacao.addMulta(multa2);
-		Autuacao autuacao1;
-		autuacao1 = new Autuacao(local, veiculo1, pessoa1);
-		autuacao1.addMulta(multa2);
+		Pessoa pessoa;
+		pessoa = new Condutor("Glayber", "12345-678", 12345, "AB");
+		Pessoa pessoa1;
+		pessoa1 = new Agente("Lucas", "12345-67", "AB");
 		
 		Autuador autuador;
-		autuador = new Autuador(veiculo, pessoa, local);
-		autuador.addAutuacao(autuacao);
-		autuador.addAutuacao(autuacao1);
-		autuador.printar(autuador.getAtuacaol(local));
+		autuador = new Autuador();
+		autuador.autuar(local, veiculo1, MultasA, pessoa1);
+		autuador.autuar(local, veiculo, MultasC, pessoa);
+		System.out.println(autuador.getAtuacaop(pessoa));
+		autuador.printar(autuador.getAtuacaop(pessoa));
 	}
 }
